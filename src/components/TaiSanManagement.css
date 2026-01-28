@@ -1,0 +1,224 @@
+.tai-san-management {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.filters-section {
+  max-width: 1400px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 0;
+}
+
+.filter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.filter-group input::placeholder {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.filter-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23495057' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 40px;
+}
+
+.filter-group select:hover {
+  border-color: #ced4da;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #e9ecef;
+}
+
+.filter-actions .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+}
+
+.filter-actions .btn-secondary:hover {
+  background: linear-gradient(135deg, #5a6268 0%, #495057 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+}
+
+.filter-actions .btn-secondary:active {
+  transform: translateY(0);
+}
+
+.input-with-prefix {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-prefix {
+  position: absolute;
+  left: 12px;
+  color: #6c757d;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.input-with-prefix input {
+  padding-left: 60px !important;
+}
+
+/* Responsive cho filter */
+@media (max-width: 1024px) {
+  .filter-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .filters-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-column {
+    gap: 12px;
+  }
+  
+  .filter-group label {
+    font-size: 12px;
+  }
+  
+  .filter-group input,
+  .filter-group select {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+.btn-info {
+  padding: 6px 12px;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 6px;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+  transform: scale(1.1);
+}
+
+.modal-large {
+  max-width: 900px;
+  width: 95%;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-moi {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-tot {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.status-hong {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-can_bao_tri {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-dang_su_dung {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.status-da_thu_hoi {
+  background-color: #d4edda;
+  color: #155724;
+}
