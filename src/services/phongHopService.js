@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = '/api/phong_hop';
+const API_BASE_URL = '/api/list_phong_hop';
 
 class PhongHopService {
   constructor(dbname) {
